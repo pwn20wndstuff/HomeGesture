@@ -5,5 +5,5 @@ Version: 1.3
 Architecture: iphoneos-arm
 Description: Enable iPhone X home gesture on other devices.
 Maintainer: Pwn20wnd <pwn20wndstuff@gmail.com>
-Author: VitaTaf, Pwn20wnd
+Author: Pwn20wnd, VitaTaf
 Section: Tweaks
