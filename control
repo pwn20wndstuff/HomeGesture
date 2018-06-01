@@ -1,9 +1,9 @@
-Package: com.VitaTaf.HomeGesture
+Package: com.pwn20wnd.homegesture
 Name: HomeGesture
 Depends: mobilesubstrate
-Version: 1.2
+Version: 1.3
 Architecture: iphoneos-arm
 Description: Enable iPhone X home gesture on other devices.
-Maintainer: VitaTaf
-Author: VitaTaf
+Maintainer: Pwn20wnd <pwn20wndstuff@gmail.com>
+Author: VitaTaf, Pwn20wnd
 Section: Tweaks

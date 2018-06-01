@@ -116,3 +116,21 @@ long _homeButtonType = 1;
 	return YES;
 }
 %end
+
+%ctor
+{
+	NSArray *args = [[NSClassFromString(@"NSProcessInfo") processInfo] arguments];
+	NSUInteger count = args.count;
+	if (count != 0) {
+		NSString *executablePath = args[0];
+		if (executablePath) {
+			NSString *processName = [executablePath lastPathComponent];
+			BOOL isSpringBoard = [processName isEqualToString:@"SpringBoard"];
+			BOOL isApplication = [executablePath rangeOfString:@"/Application"].location != NSNotFound;
+			if (isSpringBoard || isApplication) {
+				%init;
+			}
+		}
+	}
+}
+
